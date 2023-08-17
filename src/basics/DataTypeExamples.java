@@ -1,3 +1,5 @@
+package basics;
+
 public class DataTypeExamples {
 
     public static void main(String[] args) {
@@ -22,6 +24,9 @@ public class DataTypeExamples {
          int i1 = 'f';
 
         System.out.println(i1);
+
+
+        Object[] data = {"amol",7, 'g'};
 
     }
 }

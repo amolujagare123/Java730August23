@@ -1,22 +1,17 @@
-package ArraysDemo;
+package ArraysDemo.SingleDimentional;
 
-public class IntArrayDemo1 {
+public class IntArrayDemo2 {
 
     public static void main(String[] args) {
 
-        int[] a = new int[5];
-
-        a[0] = 13;
-        a[1] = 34;
-        a[2] = 11;
-        a[3] = 89;
-        a[4] = 90;
-
+        int[] a = {34,67,89,11,23,45,78,9};
+       
         System.out.println("Length="+a.length);
 
         for (int i=0;i<a.length;i++)
           System.out.println(a[i]);
 
+        System.out.println("\nfor each loop");
         for(int x:a) // for each loop
         {
             System.out.println(x);

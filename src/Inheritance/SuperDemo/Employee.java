@@ -31,11 +31,13 @@ class Programmer extends Employee
         System.out.println("Programmer constructor");
     }
     int workingHours = 10;
+
     void sampleMethod()
     {
         System.out.println("sampleMethod : Programmer");
     }
     int bonus = 20000;
+
     void programmerWork()
     {
         System.out.println("Code");

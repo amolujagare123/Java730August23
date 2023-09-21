@@ -1,8 +1,8 @@
 package Inheritance.polymorphism;
 
-public class TvShowroom {
+public /*final*/ class TvShowroom {
 
-        void channels()
+        /*final*/ void channels()
         {
             System.out.println("TvShowroom : channels");
         }

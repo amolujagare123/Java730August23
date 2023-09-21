@@ -1,5 +1,10 @@
 package ClassAndConstructors;
 
+import staticNFinal.Student2;
+
+import static staticNFinal.Student2.staticMethod1;
+import static staticNFinal.Student2.staticMethod2;
+import static staticNFinal.Student2.college;
 public class MyClassDemo {
     public int a;
     public double d;
@@ -17,22 +22,11 @@ public class MyClassDemo {
 
     public static void main(String[] args) {
 
-      /*  int x;
-        x = 10;*/
+        staticMethod1();
+        staticMethod2();
 
-        MyClassDemo ob = new MyClassDemo();
-        ob.a = 10 ;
-        ob.d = 23.67;
-        ob.c = 'g';
-        ob.str = "txt";
-        ob.display();
+        college = "Pune college";
 
-        MyClassDemo ob2 = new MyClassDemo();
-        ob2.a = 11 ;
-        ob2.d = 33.67;
-        ob2.c = 't';
-        ob2.str = "java";
-        ob2.display();
     }
 
 }

@@ -2,7 +2,7 @@ package Inheritance.polymorphism;
 
 public /*final*/ class TvShowroom {
 
-        /*final*/ void channels()
+        /*final*/  void channels()
         {
             System.out.println("TvShowroom : channels");
         }

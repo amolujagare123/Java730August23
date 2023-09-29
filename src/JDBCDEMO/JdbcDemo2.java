@@ -1,11 +1,8 @@
 package JDBCDEMO;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
-public class JdbcDemo1 {
+public class JdbcDemo2 {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
       // 1. Loading a driver
@@ -22,12 +19,19 @@ public class JdbcDemo1 {
 
       // 4. Executing the query
 
-        // DML Queries - Data manipulation language
+        // DDL Queries - Data Definition language
 
-        //String sql = "insert into student values (7,'revathy','comp',99)";
-       // String sql = "update student set branch='IT',marks=100 where rno=7";
-        String sql = "delete from student where rno=7";
-        st.executeUpdate(sql);
+        String sql = "select * from student";
+
+        ResultSet rs = st.executeQuery(sql);
+
+        while (rs.next())
+        {
+            System.out.print(rs.getInt("rno")+"\t\t");
+            System.out.print(rs.getString("name")+"\t\t");
+            System.out.print(rs.getString("branch")+"\t\t");
+            System.out.println(rs.getInt("marks"));
+        }
 
     }
 }

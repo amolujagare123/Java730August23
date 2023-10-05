@@ -25,7 +25,10 @@ public class ArrayListDemo10 {
         al.add('o');
         al.add('p');
 
+        System.out.println(al);
         // remove all vowels (a,e,i,o,u) from above list
+        al.removeIf(c -> ( c=='a' || c=='e'|| c=='i'|| c=='o'|| c=='u'));
+        System.out.println(al);
 
 
 

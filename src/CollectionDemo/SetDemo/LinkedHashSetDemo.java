@@ -1,4 +1,4 @@
-package CollectionDemo;
+package CollectionDemo.SetDemo;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;

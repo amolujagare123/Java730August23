@@ -1,4 +1,4 @@
-package CollectionDemo;
+package CollectionDemo.SetDemo;
 
 import java.util.LinkedHashSet;
 import java.util.TreeSet;
